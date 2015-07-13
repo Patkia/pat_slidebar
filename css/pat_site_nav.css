@@ -1,0 +1,165 @@
+/* header menu */
+header{
+	font-family:sans-serif;
+	background:#FFF;
+	height:5rem;
+	box-shadow:0 2px 4px rgba(0,0,0,.35);
+	position:fixed;
+	top:0;
+	left:0;
+	right:0;
+	z-index:100;
+  padding: 5px;
+}
+
+header #menu_toggle {
+	display:inline-block;
+	height:48px;
+	color:#fff;
+	font-weight:700;
+	padding:1.8rem 1.7rem 1.6rem 2rem;
+	float:left;
+	position:relative;
+
+	-webkit-transition:-webkit-transform .15s cubic-bezier(.2,.3,.25,.9);
+	-moz-transition:-moz-transform .15s cubic-bezier(.2,.3,.25,.9);
+	transition:transform .15s cubic-bezier(.2,.3,.25,.9)
+}
+/* fixed icon toggle size */
+header #menu_toggle .menu_icon .fa-lg {
+ 	font-size: 2em;
+}
+/* website name */
+header #website_name a{
+	color:#fff;
+	font-size:1.4rem;
+	font-weight:700;
+	float:left;
+	padding:1.4rem 1rem 1rem;
+	margin-bottom:0;
+}
+
+/* right menu icon */
+header .header_nav{
+	position:absolute;
+	right:8px;
+	top:0;
+	height:5rem
+}
+
+header .header_btns a{
+	color:#fff;
+	display:inline-block;
+}
+
+.headroom--pinned{-webkit-transform:translateY(0);-moz-transform:translateY(0);-ms-transform:translateY(0);transform:translateY(0)}
+.headroom--unpinned{-webkit-transform:translateY(-100%);-moz-transform:translateY(-100%);-ms-transform:translateY(-100%);transform:translateY(-100%)}
+
+header{height:48px;}
+header #menu_toggle{height:48px;padding:1.4rem}
+header .header_links a{padding:1.3rem .7rem}
+header #menu_toggle{ border-left: 1px solid #3ba6e1;}
+header .header_links,header .menu_label{display:none}
+header .header_btns a{padding:20px 8px 5px 8px; height:48px; position: relative;}
+header .header_btns a.active {   
+	color: #2C9CCF;
+  	border-radius: 5px;
+  	text-decoration: none;
+  	background-color: #f9f9f9;
+}
+header .header_btns a i{font-size:22px}
+header .header_btns a i.badge { 
+  font-family:sans-serif;
+  color: #FFF;
+  width: 20px;
+  font-size: 11px;
+  color: #ffffff;
+  background-color: #FF0000;
+  border-radius: 10px;
+  height: 20px;
+  padding: 5px 0 0 0;
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  z-index: 5;
+  padding: 5px 7px;
+}
+header .header_btns a .label{display:none!important}
+header .header_btns a img{margin-right:.25rem;margin-left:0}
+header {
+	-webkit-transition: -webkit-transform 600ms ease;
+	   -moz-transition:    -moz-transform 600ms ease;
+	     -o-transition:      -o-transform 600ms ease;
+	        transition:         transform 600ms ease;
+}
+
+/* menu toggle icon */
+.headroom .menu-icon {
+  position: absolute;
+  top: 26px;
+  left: 20px;
+  z-index: 92;
+}
+
+.headroom .icon {
+  position: absolute;
+  top: 72%;
+  left: 42%;
+  height: 3px;
+  width: 20px;
+  background: #666;
+  border-radius: 1px;
+  -webkit-transform-origin: 50% 50%;
+  -moz-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  -o-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  transition-property: all;
+  -webkit-transition: -webkit-transform 400ms ease;
+     -moz-transition:    -moz-transform 400ms ease;
+       -o-transition:      -o-transform 400ms ease;
+          transition:         transform 400ms ease;
+}
+
+.headroom .icon.top {
+  -webkit-transform: rotate(0)translate3d(0,-6px,0);
+  -moz-transform: rotate(0)translate3d(0,-6px,0);
+  -ms-transform: rotate(0)translate3d(0,-6px,0);
+  -o-transform: rotate(0)translate3d(0,-6px,0);
+  transform: rotate(0)translate3d(0,-6px,0);
+}
+.headroom .icon.middle {
+  -webkit-transition-duration: .1s;
+  -moz-transition-duration: .1s;
+  transition-duration: .1s;
+}
+.headroom .icon.bottom {
+  -webkit-transform: rotate(0)translate3d(0,6px,0);
+  -moz-transform: rotate(0)translate3d(0,6px,0);
+  -ms-transform: rotate(0)translate3d(0,6px,0);
+  -o-transform: rotate(0)translate3d(0,6px,0);
+  transform: rotate(0)translate3d(0,6px,0);
+}
+
+header.headroom.active .menu-icon {
+  left: 20px;
+}
+header.headroom.active .icon.top {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+header.headroom.active .icon.middle {
+  opacity: 0;
+}
+header.headroom.active .icon.bottom {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
